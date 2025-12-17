@@ -15,15 +15,16 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://hackathon1-book-project2025.github.io',
+  url: 'https://sarfrazaziz786.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/hackathon1-book-project2025/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'hackathon1-book-project2025', // Usually your GitHub org/user name.
+  organizationName: 'SarfrazAziz786', // Usually your GitHub org/user name.
   projectName: 'hackathon1-book-project2025', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // The branch to deploy to
 
   onBrokenLinks: 'throw',
 
