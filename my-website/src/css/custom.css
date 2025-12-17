@@ -1,0 +1,87 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1a73e8; /* Google blue for tech/robotics feel */
+  --ifm-color-primary-dark: #1866d1;
+  --ifm-color-primary-darker: #1658b9;
+  --ifm-color-primary-darkest: #124898;
+  --ifm-color-primary-light: #3b8cff;
+  --ifm-color-primary-lighter: #62a0ff;
+  --ifm-color-primary-lightest: #89bbff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Custom variables for robotics theme */
+  --robotics-accent: #4285f4;
+  --robotics-secondary: #34a853;
+  --robotics-warning: #fbbc05;
+  --robotics-error: #ea4335;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #8ab4f8;
+  --ifm-color-primary-dark: #6a9df2;
+  --ifm-color-primary-darker: #5a8de9;
+  --ifm-color-primary-darkest: #4078d6;
+  --ifm-color-primary-light: #a2cbff;
+  --ifm-color-primary-lighter: #bddfff;
+  --ifm-color-primary-lightest: #e5f2ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for robotics/ai content */
+.hero--primary {
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+}
+
+/* Code block styling for technical content */
+.admonition {
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.admonition--note {
+  border-left-color: var(--robotics-secondary);
+}
+
+.admonition--caution {
+  border-left-color: var(--robotics-warning);
+}
+
+.admonition--danger {
+  border-left-color: var(--robotics-error);
+}
+
+/* Styling for robotics diagrams and figures */
+.robotics-figure {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.robotics-figure figcaption {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Special styling for equations and code in robotics content */
+.math-display {
+  overflow-x: auto;
+}
+
+.robotics-concept {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 3px solid var(--ifm-color-primary);
+}
