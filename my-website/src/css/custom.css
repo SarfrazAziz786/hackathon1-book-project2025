@@ -1,23 +1,24 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Custom CSS for the Physical AI & Humanoid Robotics Book
  */
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #1a73e8; /* Google blue for tech/robotics feel */
-  --ifm-color-primary-dark: #1866d1;
-  --ifm-color-primary-darker: #1658b9;
-  --ifm-color-primary-darkest: #124898;
-  --ifm-color-primary-light: #3b8cff;
-  --ifm-color-primary-lighter: #62a0ff;
-  --ifm-color-primary-lightest: #89bbff;
+  --ifm-color-primary: #2563eb; /* More vibrant blue for robotics theme */
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  /* Custom variables for robotics theme */
-  --robotics-accent: #4285f4;
+  /* Custom colors for robotics theme */
+  --robotics-blue: #1e40af;
+  --robotics-accent: #0ea5e9;
+  --robotics-light: #dbeafe;
+  --robotics-dark: #1e3a8a;
   --robotics-secondary: #34a853;
   --robotics-warning: #fbbc05;
   --robotics-error: #ea4335;
@@ -25,19 +26,63 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #8ab4f8;
-  --ifm-color-primary-dark: #6a9df2;
-  --ifm-color-primary-darker: #5a8de9;
-  --ifm-color-primary-darkest: #4078d6;
-  --ifm-color-primary-light: #a2cbff;
-  --ifm-color-primary-lighter: #bddfff;
-  --ifm-color-primary-lightest: #e5f2ff;
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Dark mode custom colors */
+  --robotics-blue: #93c5fd;
+  --robotics-accent: #7dd3fc;
+  --robotics-light: #1e3a8a;
+  --robotics-dark: #dbeafe;
 }
 
-/* Custom styles for robotics/ai content */
+/* Custom styles for chatbot */
+.chatbot-container {
+  max-width: 100%;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+/* Style for homepage features */
+.features {
+  padding: 4rem 0;
+  background-color: var(--robotics-light);
+  background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--robotics-light) 100%);
+}
+
+[data-theme='dark'] .features {
+  background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--robotics-dark) 100%);
+}
+
+/* Hero banner customization */
 .hero--primary {
-  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+  background: linear-gradient(135deg, var(--robotics-blue) 0%, var(--robotics-accent) 100%);
+}
+
+[data-theme='dark'] .hero--primary {
+  background: linear-gradient(135deg, var(--robotics-dark) 0%, var(--robotics-blue) 100%);
+}
+
+/* Button customization */
+.button--secondary {
+  background-color: white;
+  color: var(--robotics-blue);
+  font-weight: bold;
+}
+
+.button--secondary:hover {
+  background-color: var(--robotics-light);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Code block styling for technical content */

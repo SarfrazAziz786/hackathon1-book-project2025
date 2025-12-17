@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Robotic Nervous System',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn ROS 2 as the middleware connecting AI agents to humanoid robot hardware and simulators.
+        Understand messaging, services, and actions that form the backbone of robotic systems.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Digital Twins & Simulation',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Master building digital twins with Gazebo and Unity. Explore physics simulation,
+        sensor modeling, and virtual environments for testing humanoid robotics algorithms.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'AI-Robot Brain',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Discover NVIDIA Isaac technologies to build the AI "brain" of humanoid robots.
+        Integrate perception, planning, and control systems for autonomous robot behavior.
       </>
     ),
   },
@@ -58,7 +58,7 @@ function Feature({title, Svg, description}: FeatureItem) {
 
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
+    <section className={clsx('features', styles.features)}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
