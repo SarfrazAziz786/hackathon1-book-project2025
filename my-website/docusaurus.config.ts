@@ -25,6 +25,7 @@ const config: Config = {
   organizationName: 'SarfrazAziz786', // Usually your GitHub org/user name.
   projectName: 'hackathon1-book-project2025', // Usually your repo name.
   deploymentBranch: 'gh-pages', // The branch to deploy to
+  trailingSlash: true,           // recommended to avoid broken links
 
   onBrokenLinks: 'throw',
 
