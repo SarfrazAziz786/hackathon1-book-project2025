@@ -15,17 +15,17 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://sarfrazaziz786.github.io',
+  url: 'https://hackathon1-book-project2025.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/hackathon1-book-project2025/',
+  // For Vercel deployment, use '/'
+  baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'SarfrazAziz786', // Usually your GitHub org/user name.
-  projectName: 'hackathon1-book-project2025', // Usually your repo name.
-  deploymentBranch: 'gh-pages', // The branch to deploy to
-  trailingSlash: true,           // recommended to avoid broken links
+  // GitHub pages deployment config (disabled for Vercel)
+  // Uncomment if deploying to GitHub Pages instead
+  // organizationName: 'SarfrazAziz786', // Usually your GitHub org/user name.
+  // projectName: 'hackathon1-book-project2025', // Usually your repo name.
+  // deploymentBranch: 'gh-pages', // The branch to deploy to
+  trailingSlash: false,           // false for Vercel
 
   onBrokenLinks: 'throw',
 
